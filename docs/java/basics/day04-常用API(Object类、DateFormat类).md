@@ -1,5 +1,5 @@
 ## day04 【Object类、常用API】
-### 今日学习内容-2020.9.20
+## 今日学习内容-2020.9.20
 
 - Object类
 - 日期格式化
@@ -9,9 +9,9 @@
 - Arrays
 - 正则表达式
 
-### 一、Object类
+## 一、Object类
 
-#### 1.1 可以说出Object类的特点
+### 1.1 可以说出Object类的特点
 
 `java.lang.Object`类是Java语言中的根类，每个类都使用 `Object` 作为超类。所有对象（包括数组）都实现这个类的方法。
 
@@ -23,7 +23,7 @@ public class MyClass /*extends Object*/ {
 }
 ```
 
-#### 1.2 能够重写Object类的toString方法
+### 1.2 能够重写Object类的toString方法
 
 由于toString方法返回的结果是内存地址，而在开发中，内存地址并没有实际的应用价值，经常需要按照对象的属性得到相应的字符串表现形式，因此也需要重写它。
 
@@ -39,7 +39,7 @@ public class Person {
 }
 ```
 
-#### 1.3 能够重写Object类的equals方法
+### 1.3 能够重写Object类的equals方法
 
 实际应用中，比较内存地址是否相同并没有意义，我们可以定义对象自己的比较方式，比较对象中成员变量的值是否相同。需要对方法进行重写。
 
@@ -66,7 +66,7 @@ public class Person {
         return false;}}
 ```
 
-### 二、DateFormat类
+## 二、DateFormat类
 
  使用将`日期格式化为字符串`的方法和使用将`字符串转换成日期`的方法
 
@@ -96,9 +96,9 @@ public class Person {
     }
 ```
 
-### 三、Calendar日历类
+## 三、Calendar日历类
 
-#### 3.1 日历对象获取方式
+### 3.1 日历对象获取方式
 
 Calendar是抽象类，不能创建对象，需要使用子类对象。`java.util.GregorianCalendar`类是Calendar的子类，但是创建日历对象需要根据本地的时区，语言环境来创建，比较困难，Calendar类提供了静态方法 getInstance()直接获取子类的对象。
 
@@ -108,14 +108,14 @@ Calendar是抽象类，不能创建对象，需要使用子类对象。`java.uti
 Calendar cal = Calendar.getInstance();
 ```
 
-#### 3.2 常用方法
+### 3.2 常用方法
 
 - `public int get(int field)`：返回给定日历字段的值。
 - `public void set(int field, int value)`：将给定的日历字段设置为给定值。
 - `public abstract void add(int field, int amount)`：根据日历的规则，为给定的日历字段添加或减去指定的时间量。
 - `public Date getTime()`：返回一个表示此Calendar时间值（从历元到现在的毫秒偏移量）的Date对象。
 
-#### 3.2 日历字段
+### 3.2 日历字段
 
 Calendar类中提供很多静态成员，直接类名调用，代表给定的日历字段：
 
@@ -147,11 +147,11 @@ public static void main(String[] args) {
     System.out.println(d);
 }    
 ```
-### 四、冒泡排序
+## 四、冒泡排序
 
  冒泡排序法是采用数组中相邻元素进行比较换位。
 
-#### 4.1 冒泡排序图解
+### 4.1 冒泡排序图解
 
 ![](https://cdn.jsdelivr.net/gh/kun213/picbed/img/20200921162427.png)
 
@@ -177,11 +177,11 @@ public static void main(String[] args) {
         System.out.println("排序后：" + arrayToString(arr));
     }
 ```
-### 五、数组的二分查找法
+## 五、数组的二分查找法
 
 所谓数组的二分查找法，对于一个有序数组，查找一个元素是否存在于数组中，如果存在就返回出现的索引，如果不存在就返回负数。
 
-#### 5.1 二分查找法原理
+### 5.1 二分查找法原理
 
 取数组中间的元素和被查找的元素进行比较，如果被查找元素大于数组中间元素，就舍去数组元素的一半，对另一半继续进行查找。
 
@@ -224,9 +224,9 @@ public static void main(String[] args) {
     }
 ```
 
-### 六、正则表达式
+## 六、正则表达式
 
-#### 6.1 正则规则-字符类
+### 6.1 正则规则-字符类
 
 | 规则写法    | 规则含义                                    |
 | ----------- | ------------------------------------------- |
@@ -236,7 +236,7 @@ public static void main(String[] args) {
 | [0-9]       | 0到9，两头的数字包括在内（范围）            |
 | [a-zA-Z0-9] | a 到 z 或 A到 Z或0-9                        |
 
-#### 6.2 正则规则-预定义字符类
+### 6.2 正则规则-预定义字符类
 
 | 规则写法 | 规则含义                  |
 | -------- | ------------------------- |
@@ -246,7 +246,7 @@ public static void main(String[] args) {
 | \w       | 单词字符 [a-zA-Z0-9_]     |
 | \W       | 非单词字符`[^a-zA-Z0-9_]` |
 
-#### 6.3 正则规则-数量词
+### 6.3 正则规则-数量词
 
 | 规则写法 | 规则含义                       |
 | -------- | ------------------------------ |
@@ -257,7 +257,7 @@ public static void main(String[] args) {
 | X{n,}    | 至少 *n* 次                    |
 | X{n,m}   | 至少 *n* 次，但是不超过 *m* 次 |
 
-#### 6.4 正则练习-String类matches方法
+### 6.4 正则练习-String类matches方法
 
 方法：boolean matches(String regex)传递正则表达式规则，检测字符串是否匹配正则表达式规则，匹配返回true。
 
@@ -283,7 +283,7 @@ public static void main(String[] args){
 }
 ```
 
-#### 6.5 正则练习-String类split方法
+### 6.5 正则练习-String类split方法
 
 方法：String[] split(String regex)传递正则表达式规则，以正则规则对字符串进行切割。
 
