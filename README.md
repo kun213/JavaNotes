@@ -51,6 +51,16 @@
 
 [day13-JDK8新特性-2020.10.13](docs/java/basics/day13-JDK8新特性.md)
 
+[day14-网络编程-2020.10.16](docs/java/basics/day14-网络编程.md)
+
+[day15-注释_反射-2020.10.17](docs/java/basics/day15-注释_反射.md)
+
+[day16-枚举_xml-2020.10.19](docs/java/basics/day16-枚举_xml.md)
+
+### MySQL数据库（day17-day19）
+
+
+
 ------
 
 ### 公众号
