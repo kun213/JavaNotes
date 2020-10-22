@@ -33,7 +33,7 @@
 
 [day04-常用API【Object类、DateFormat类】-2020.9.20](docs/java/basics/day04-常用API(Object类、DateFormat类).md)
 
-[day05-API-异常【API、异常】-2020.9.22](docs/java/basics/day05-API-异常（API、异常）.md)
+[day05-API-异常【API、异常】-2020.9.22](docs/java/basics/day05-常用API-异常（API、异常）.md)
 
 [day06-集合 -2020.9.25](docs/java/basics/day06-集合[1].md)
 
@@ -41,7 +41,7 @@
 
 [day08-集合-2020.10.5](docs/java/basics/day08-集合[3].md)
 
-[day09-多线程-2020.10.6](docs/java/basics/day-09多线程[1].md)
+[day09-多线程-2020.10.6](docs/java/basics/day09-多线程[1].md)
 
 [day10-多线程-2020.10.9](docs/java/basics/day-10多线程[2].md)
 
